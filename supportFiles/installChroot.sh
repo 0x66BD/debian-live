@@ -21,7 +21,7 @@ update-locale LANG=en_US.UTF-8
 echo Install packages
 apt-get install -y --no-install-recommends linux-image-amd64 live-boot systemd-sysv
 apt-get install -y bash-completion cifs-utils curl dbus dosfstools firmware-linux-free gddrescue gdisk iputils-ping isc-dhcp-client less nfs-common ntfs-3g openssh-client open-vm-tools procps vim wimtools wget 
-apt-get install -y zstd pzstd e2fsprogs clonezill
+apt-get install -f -y zstd pzstd e2fsprogs clonezill
 echo Clean apt post-install
 apt-get clean
 
